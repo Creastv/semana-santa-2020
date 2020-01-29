@@ -19,6 +19,11 @@ p, li, span {
   margin: 0 auto;
 }
 
+.container-box2 {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,5 +175,58 @@ p, li, span {
 .btn-gold-grad:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(178, 145, 98, 0.4);
           box-shadow: 0 0 0 0.2rem rgba(178, 145, 98, 0.4);
+}
+
+.bar {
+  border: 1px solid #adabab;
+  background-color: #d3d2d2;
+  border-radius: 9px;
+  padding: 15px;
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.bar .title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.bar .title h2 {
+  color: #01306d;
+  margin: 0;
+  padding: 0;
+}
+
+.bar .title p {
+  color: #01306d;
+  margin: 0;
+  padding: 0;
+}
+
+.bar .img {
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  margin: 0px 10px 0px 0px;
 }
 /*# sourceMappingURL=main.css.map */
