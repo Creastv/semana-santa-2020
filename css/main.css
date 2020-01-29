@@ -1,4 +1,102 @@
-body {
-  background: red;
+.container {
+  width: 100%;
+}
+
+.container-box {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.btn {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-blue {
+  background: #01306d;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  text-decoration: none;
+  background-color: rgba(1, 48, 109, 0.9);
+}
+
+.btn-blue:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(1, 48, 109, 0.4);
+          box-shadow: 0 0 0 0.2rem rgba(1, 48, 109, 0.4);
+}
+
+.btn-gold {
+  background: #b29162;
+  color: #fff;
+}
+
+.btn-gold:hover {
+  text-decoration: none;
+  background-color: rgba(178, 145, 98, 0.9);
+}
+
+.btn-gold:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(178, 145, 98, 0.4);
+          box-shadow: 0 0 0 0.2rem rgba(178, 145, 98, 0.4);
+}
+
+.btn-blue-grad {
+  background: #01285b;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(49%, #01285b), color-stop(51%, #01306d));
+  background: linear-gradient(0deg, #01285b 49%, #01306d 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#01285b",endColorstr="#01306d",GradientType=1);
+  color: #fff;
+}
+
+.btn-blue-grad:hover {
+  text-decoration: none;
+  background: #01285b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49%, #01285b), color-stop(51%, #01306d));
+  background: linear-gradient(180deg, #01285b 49%, #01306d 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#01285b",endColorstr="#01306d",GradientType=1);
+}
+
+.btn-blue-grad:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(1, 48, 109, 0.4);
+          box-shadow: 0 0 0 0.2rem rgba(1, 48, 109, 0.4);
+}
+
+.btn-gold-grad {
+  background: #a7885d;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(49%, #a7885d), color-stop(51%, #b29162));
+  background: linear-gradient(0deg, #a7885d 49%, #b29162 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#a7885d",endColorstr="#b29162",GradientType=1);
+  color: #fff;
+}
+
+.btn-gold-grad:hover {
+  text-decoration: none;
+  background: #a7885d;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49%, #a7885d), color-stop(51%, #b29162));
+  background: linear-gradient(180deg, #a7885d 49%, #b29162 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= "#a7885d",endColorstr="#b29162",GradientType=1);
+}
+
+.btn-gold-grad:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(178, 145, 98, 0.4);
+          box-shadow: 0 0 0 0.2rem rgba(178, 145, 98, 0.4);
 }
 /*# sourceMappingURL=main.css.map */

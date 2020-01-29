@@ -1,0 +1,77 @@
+.btn {
+  @include tranz;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-blue {
+  background: $main;
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+    background-color: rgba($main, 0.9);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 .2rem rgba($main, 0.4);
+  }
+
+}
+
+.btn-gold {
+  background: $main2;
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+    background-color: rgba($main2, 0.9);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 .2rem rgba($main2, 0.4);
+  }
+
+}
+
+.btn-blue-grad {
+  @include grad-btn-blue;
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+    @include grad-btn-blue-rev;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 .2rem rgba($main, 0.4);
+  }
+}
+
+.btn-gold-grad {
+  @include grad-btn-gold;
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+    @include grad-btn-gold-rev;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 .2rem rgba($main2, 0.4);
+  }
+}

@@ -1,0 +1,40 @@
+@mixin shadow {
+  -webkit-box-shadow: 0 0 29px -1px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 0 29px -1px rgba(0,0,0,0.23);
+  box-shadow: 0 0 29px -1px rgba(0,0,0,0.23);
+}
+@mixin tranz {
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+@mixin grad-btn-blue {
+  background: rgb(1,40,91);
+  background: -moz-linear-gradient(0deg, rgba(1,40,91,1) 49%, rgba(1,48,109,1) 51%);
+  background: -webkit-linear-gradient(0deg, rgba(1,40,91,1) 49%, rgba(1,48,109,1) 51%);
+  background: linear-gradient(0deg, rgba(1,40,91,1) 49%, rgba(1,48,109,1) 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#01285b",endColorstr="#01306d",GradientType=1);
+}
+@mixin grad-btn-blue-rev {
+  background: rgb(1,40,91);
+  background: -moz-linear-gradient(180deg, rgba(1,40,91,1) 49%, rgba(1,48,109,1) 51%);
+  background: -webkit-linear-gradient(180deg, rgba(1,40,91,1) 49%, rgba(1,48,109,1) 51%);
+  background: linear-gradient(180deg, rgba(1,40,91,1) 49%, rgba(1,48,109,1) 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#01285b",endColorstr="#01306d",GradientType=1);
+}
+@mixin grad-btn-gold {
+  background: rgb(167,136,93);
+  background: -moz-linear-gradient(0deg, rgba(167,136,93,1) 49%, rgba(178,145,98,1) 51%);
+  background: -webkit-linear-gradient(0deg, rgba(167,136,93,1) 49%, rgba(178,145,98,1) 51%);
+  background: linear-gradient(0deg, rgba(167,136,93,1) 49%, rgba(178,145,98,1) 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#a7885d",endColorstr="#b29162",GradientType=1);
+}
+@mixin grad-btn-gold-rev {
+  background: rgb(167,136,93);
+  background: -moz-linear-gradient(180deg, rgba(167,136,93,1) 49%, rgba(178,145,98,1) 51%);
+  background: -webkit-linear-gradient(180deg, rgba(167,136,93,1) 49%, rgba(178,145,98,1) 51%);
+  background: linear-gradient(180deg, rgba(167,136,93,1) 49%, rgba(178,145,98,1) 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= "#a7885d",endColorstr="#b29162",GradientType=1);
+}
