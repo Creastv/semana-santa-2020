@@ -182,7 +182,7 @@ p, li, span {
   background-color: #d3d2d2;
   border-radius: 9px;
   padding: 15px;
-  margin: 10px 0px;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +198,22 @@ p, li, span {
           align-items: center;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.bar:hover {
+  -webkit-box-shadow: 0 0 0 3px rgba(1, 48, 109, 0.4);
+          box-shadow: 0 0 0 3px rgba(1, 48, 109, 0.4);
+  background: #01306d;
+}
+
+.bar:hover a h2 {
+  color: #fff !important;
+}
+
+.bar:hover a p {
+  color: #fff !important;
 }
 
 .bar .title {
@@ -206,13 +222,17 @@ p, li, span {
           flex-grow: 1;
 }
 
-.bar .title h2 {
+.bar .title a {
+  text-decoration: none;
+}
+
+.bar .title a h2 {
   color: #01306d;
   margin: 0;
   padding: 0;
 }
 
-.bar .title p {
+.bar .title a p {
   color: #01306d;
   margin: 0;
   padding: 0;
@@ -225,6 +245,6 @@ p, li, span {
   min-width: 75px;
   min-height: 75px;
   text-align: center;
-  margin: 0px 10px 0px 0px;
+  margin: 0 10px 0 0;
 }
 /*# sourceMappingURL=main.css.map */
