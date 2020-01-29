@@ -247,4 +247,95 @@ p, li, span {
   text-align: center;
   margin: 0 10px 0 0;
 }
+
+.wraper-box {
+  text-align: center;
+  margin: 20px;
+}
+
+.wraper-box .box {
+  position: relative;
+  background-size: cover !important;
+  height: 300px;
+  width: 300px;
+}
+
+.wraper-box .box .title {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.wraper-box .box .title h2 {
+  color: #fff;
+  font-size: 38px;
+  padding: 10px;
+}
+
+.wraper-box .btn {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  padding: 5px 30px;
+  border-radius: 100px;
+}
+
+.wrap-search {
+  padding: 15px;
+  background-color: #01306d;
+  border-radius: 9px;
+  max-width: 400px;
+  min-width: 400px;
+  margin: 20px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #b29162;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 21px;
+  color: #01306d;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.search-close {
+  width: 0;
+  padding: 5px 0;
+}
+
+.searchTerm:focus {
+  color: #01306d;
+}
+
+.searchButton {
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.searchButton:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*Resize the wrap to see the search bar change!*/
 /*# sourceMappingURL=main.css.map */

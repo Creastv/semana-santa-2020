@@ -14,11 +14,6 @@
   justify-content: flex-end;
 }
 
-.search-close .searchTerm {
-   width: 0px;
-   padding: 5px 0px;
-}
-
 .searchTerm {
   width: 100%;
   border: 3px solid $main2;
@@ -30,6 +25,11 @@
   font-size: 21px;
   color: $main;
   @include tranz;
+}
+
+.search-close {
+  width: 0;
+  padding: 5px 0;
 }
 
 .searchTerm:focus {
