@@ -19,6 +19,34 @@ p, li, span {
   margin: 0 auto;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col4 {
+  margin: 10px;
+  background: red;
+}
+
+.col3 {
+  margin: 10px;
+  background: red;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .btn {
   -webkit-transition: all .25s;
   transition: all .25s;

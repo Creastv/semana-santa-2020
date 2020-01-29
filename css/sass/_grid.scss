@@ -1,7 +1,26 @@
-.container{
-    width: 100%;
+.container {
+  width: 100%;
 }
-.container-box{
-    max-width: 1400px;
-    margin:0 auto;
+
+.container-box {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col4 {
+  margin: 10px;
+  background: red;
+}
+
+.col3 {
+  margin: 10px;
+  background: red;
+  flex-grow: 1;
 }
