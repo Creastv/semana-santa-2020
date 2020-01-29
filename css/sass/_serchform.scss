@@ -1,0 +1,52 @@
+.wrap-search {
+  padding: 15px;
+  background-color: $main;
+  border-radius: 9px;
+  max-width: 400px;
+  min-width: 400px;
+  margin: 20px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-close .searchTerm {
+   width: 0px;
+   padding: 5px 0px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid $main2;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 21px;
+  color: $main;
+  @include tranz;
+}
+
+.searchTerm:focus {
+  color: $main;
+}
+
+.searchButton {
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+/*Resize the wrap to see the search bar change!*/

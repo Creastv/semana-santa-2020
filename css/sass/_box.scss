@@ -1,0 +1,31 @@
+.wraper-box {
+  text-align: center;
+  margin: 20px;
+
+  .box {
+    position: relative;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+
+    .title {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+
+      h2 {
+        color: #fff;
+        font-size: 38px;
+        padding: 10px;
+      }
+    }
+  }
+
+  .btn {
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+    padding: 5px 30px;
+    border-radius: 100px;
+  }
+}
