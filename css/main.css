@@ -190,8 +190,6 @@ p, li, span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -224,8 +222,8 @@ p, li, span {
   border-radius: 100%;
   overflow: hidden;
   background-color: #fff;
-  width: 75px;
-  height: 75px;
+  min-width: 75px;
+  min-height: 75px;
   text-align: center;
   margin: 0px 10px 0px 0px;
 }
