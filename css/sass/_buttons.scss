@@ -16,11 +16,33 @@
   border-radius: .25rem;
   text-decoration: none;
   margin: 10px;
+
+  span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 1.7;
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: 0 0 0 12px;
+  }
+}
+
+.btn.left-icon {
+  span {
+    margin: 0 12px 0 0;
+  }
 }
 
 .btn-blue {
   background: $main;
   color: $white;
+
+  span {
+    background-color: lighten($main, 10%);
+  }
 
   &:hover {
     text-decoration: none;
@@ -37,6 +59,10 @@
   background: $main2;
   color: $white;
 
+  span {
+    background-color: darken($main2, 10%);
+  }
+
   &:hover {
     text-decoration: none;
     background-color: rgba($main2, 0.9);
@@ -52,6 +78,10 @@
   @include grad-btn-blue;
   color: #fff;
 
+  span {
+    background-color: lighten($main, 10%);
+  }
+
   &:hover {
     text-decoration: none;
     @include grad-btn-blue-rev;
@@ -65,6 +95,10 @@
 .btn-gold-grad {
   @include grad-btn-gold;
   color: #fff;
+
+  span {
+    background-color: darken($main2, 10%);
+  }
 
   &:hover {
     text-decoration: none;

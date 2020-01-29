@@ -1,3 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+p, li, span {
+  font-weight: 300;
+}
+
 .container {
   width: 100%;
 }
@@ -28,9 +40,29 @@
   margin: 10px;
 }
 
+.btn span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 1.7;
+  border-radius: 100%;
+  display: inline-block;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin: 0 0 0 12px;
+}
+
+.btn.left-icon span {
+  margin: 0 12px 0 0;
+}
+
 .btn-blue {
   background: #01306d;
   color: #fff;
+}
+
+.btn-blue span {
+  background-color: #0146a0;
 }
 
 .btn-blue:hover {
@@ -46,6 +78,10 @@
 .btn-gold {
   background: #b29162;
   color: #fff;
+}
+
+.btn-gold span {
+  background-color: #97774a;
 }
 
 .btn-gold:hover {
@@ -64,6 +100,10 @@
   background: linear-gradient(0deg, #01285b 49%, #01306d 51%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#01285b",endColorstr="#01306d",GradientType=1);
   color: #fff;
+}
+
+.btn-blue-grad span {
+  background-color: #0146a0;
 }
 
 .btn-blue-grad:hover {
@@ -85,6 +125,10 @@
   background: linear-gradient(0deg, #a7885d 49%, #b29162 51%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  "#a7885d",endColorstr="#b29162",GradientType=1);
   color: #fff;
+}
+
+.btn-gold-grad span {
+  background-color: #97774a;
 }
 
 .btn-gold-grad:hover {
