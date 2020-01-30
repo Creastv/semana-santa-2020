@@ -1,3 +1,15 @@
 .baner {
-  padding: 10px
+  padding: 10px;
+  @include tranz;
+
+  img {
+    @include tranz;
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0 0 0 6px rgba(1, 48, 109, 0.4);
+    }
+
+  }
+
 }

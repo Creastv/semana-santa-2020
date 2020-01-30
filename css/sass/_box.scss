@@ -1,12 +1,21 @@
 .wraper-box {
   text-align: center;
   margin: 20px;
-
+  @include tranz;
+   .con{
+     overflow: hidden;
+   }
   .box {
     position: relative;
     background-size: cover!important;
     height: 300px;
     width: 300px;
+    @include tranz;
+
+    &:hover {
+      box-shadow: 0 0 0 6px rgba(1, 48, 109, 0.4);
+      transform: scale(1.1);
+    }
 
     .title {
       position: absolute;
@@ -28,4 +37,8 @@
     padding: 5px 30px;
     border-radius: 100px;
   }
+}
+
+.wraper-box .box:hover + .btn{
+  margin-top: -40px!important;
 }

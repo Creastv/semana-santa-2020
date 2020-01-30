@@ -33,10 +33,10 @@ window.addEventListener("scroll", function(){
     wraper.style.background = `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(1, 48, 109, 1)  ${100 - pixels/2}%`;
     imgHero.style.borderBottomLeftRadius = `  ${60 - pixels /2  }%  600px`;
     imgHero.style.borderBottomRightRadius = `  ${60 - pixels  /2  }%  600px`;
-    if (pixels <= (180 - 70)) {
+    if (pixels <= (160 - 70)) {
         searchContainer.style.transform = `translate(0, -${80 + pixels}px)`;
     } else {
-        searchContainer.style.transform = `translate(0, -180px)`;
+        searchContainer.style.transform = `translate(0, -160px)`;
     }
     // searchContainer.style.background = `red`;
 

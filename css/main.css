@@ -262,6 +262,12 @@ body {
 .wraper-box {
   text-align: center;
   margin: 20px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.wraper-box .con {
+  overflow: hidden;
 }
 
 .wraper-box .box {
@@ -269,6 +275,15 @@ body {
   background-size: cover !important;
   height: 300px;
   width: 300px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.wraper-box .box:hover {
+  -webkit-box-shadow: 0 0 0 6px rgba(1, 48, 109, 0.4);
+          box-shadow: 0 0 0 6px rgba(1, 48, 109, 0.4);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wraper-box .box .title {
@@ -291,6 +306,10 @@ body {
   border-radius: 100px;
 }
 
+.wraper-box .box:hover + .btn {
+  margin-top: -40px !important;
+}
+
 #searchContainer {
   position: relative;
   z-index: 51;
@@ -305,6 +324,13 @@ body {
   margin: 20px;
   -webkit-box-shadow: 0 0 29px -1px rgba(0, 0, 0, 0.23);
   box-shadow: 0 0 29px -1px rgba(0, 0, 0, 0.23);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap-search {
+    max-width: inherit;
+    min-width: inherit;
+  }
 }
 
 .wrap-search .title {
@@ -407,6 +433,19 @@ footer .footer-info p {
 
 .baner {
   padding: 10px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.baner img {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  width: 100%;
+}
+
+.baner img:hover {
+  -webkit-box-shadow: 0 0 0 6px rgba(1, 48, 109, 0.4);
+          box-shadow: 0 0 0 6px rgba(1, 48, 109, 0.4);
 }
 
 #paso header {
@@ -486,13 +525,21 @@ footer .footer-info p {
 #hero {
   width: 100%;
   height: 70vh;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    min-height: inherit;
+  }
 }
 
 #hero #img-hero {
   position: relative;
   height: 70vh;
+  min-height: 600px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -504,6 +551,12 @@ footer .footer-info p {
   margin-left: -9em;
   padding-right: 18em;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero #img-hero {
+    min-height: inherit;
+  }
 }
 
 #hero #img-hero #grad {
@@ -520,8 +573,15 @@ footer .footer-info p {
   position: absolute;
   top: 0;
   height: 70vh;
+  min-height: 600px;
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .copy-hero {
+    min-height: inherit;
+  }
 }
 
 #hero .copy-hero .logo {
@@ -535,21 +595,36 @@ footer .footer-info p {
   margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+  #hero .copy-hero .logo a {
+    margin-bottom: 20px;
+  }
+}
+
 #hero .copy-hero .copy {
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   position: absolute;
+  width: 100%;
+  padding: 0 20px;
 }
 
 #hero .copy-hero .copy .label {
-  width: 100%;
+  width: 90%;
+  max-width: 500px;
 }
 
 #hero .copy-hero .copy h1 {
   color: #b29162;
   font-size: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .copy-hero .copy h1 {
+    font-size: 41px;
+  }
 }
 
 #searchContainer {
@@ -560,7 +635,9 @@ footer .footer-info p {
 #toggle {
   position: fixed;
   z-index: 101;
-  background: red;
+  background: #b29162;
+  color: #01306d;
+  font-weight: 900;
   top: 10px;
   right: 10px;
   padding: 10px;
@@ -570,7 +647,7 @@ footer .footer-info p {
 #abanico {
   -webkit-transition: all .25s;
   transition: all .25s;
-  width: 100vmax;
+  width: 100%;
   height: 0;
   position: fixed;
   z-index: 100;
@@ -606,6 +683,7 @@ footer .footer-info p {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 #abanico nav ul {

@@ -1,13 +1,18 @@
 #hero {
   width: 100%;
   height: 70vh;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
+  @media #{$xs} {
+    min-height: inherit;
+  }
 
   #img-hero {
     //   @include tranz
     position: relative;
     height: 70vh;
+    min-height: 600px;
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -19,6 +24,9 @@
     margin-left: -9em;
     padding-right: 18em;
     overflow: hidden;
+    @media #{$xs} {
+      min-height: inherit;
+    }
 
     #grad {
       width: 100%;
@@ -35,8 +43,12 @@
     position: absolute;
     top: 0;
     height: 70vh;
+    min-height: 600px;
     width: 100%;
     text-align: center;
+    @media #{$xs} {
+      min-height: inherit;
+    }
 
     .logo {
       display: block;
@@ -46,6 +58,9 @@
         padding-top: 60px;
         display: inline-block;
         margin-bottom: 100px;
+        @media #{$xs} {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -54,14 +69,21 @@
       left: 50%;
       transform: translate(-50%, 0%);
       position: absolute;
+      width: 100%;
+      padding: 0 20px;
 
       .label {
-        width: 100%;
+        width: 90%;
+        max-width: 500px;
       }
 
       h1 {
         color: $main2;
         font-size: 60px;
+        @media #{$xs} {
+          font-size: 41px;
+        }
+
       }
     }
   }
@@ -74,7 +96,9 @@
 #toggle {
   position: fixed;
   z-index: 101;
-  background: red;
+  background: $main2;
+  color: $main;
+  font-weight: 900;
   top: 10px;
   right: 10px;
   padding: 10px;
@@ -83,7 +107,7 @@
 
 #abanico {
   @include tranz;
-  width: 100vmax;
+  width: 100%;
   height: 0;
   position: fixed;
   z-index: 100;
@@ -116,6 +140,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
 
     ul {
       list-style: none;
