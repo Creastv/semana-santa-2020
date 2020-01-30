@@ -1,0 +1,15 @@
+footer{
+    background:$main;
+    padding: 50px 0 0 ;
+    .logo{
+        padding:10px;
+    }
+    .footer-info{
+        background-color: lighten($main, 10%);
+        text-align: center;
+        padding:20px;
+        p{
+            color:#fff;
+        }
+    }
+}

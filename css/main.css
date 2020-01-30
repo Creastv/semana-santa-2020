@@ -10,18 +10,29 @@ p, li, span {
   font-weight: 300;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-box {
   max-width: 1400px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-box2 {
   max-width: 1024px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .row {
@@ -338,4 +349,26 @@ p, li, span {
 }
 
 /*Resize the wrap to see the search bar change!*/
+footer {
+  background: #01306d;
+  padding: 50px 0 0;
+}
+
+footer .logo {
+  padding: 10px;
+}
+
+footer .footer-info {
+  background-color: #0146a0;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-info p {
+  color: #fff;
+}
+
+.baner {
+  padding: 10px;
+}
 /*# sourceMappingURL=main.css.map */
