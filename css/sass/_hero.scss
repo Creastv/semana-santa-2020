@@ -60,6 +60,7 @@
         margin-bottom: 100px;
         @media #{$xs} {
           margin-bottom: 20px;
+          padding-top: 10px;
         }
       }
     }
@@ -81,7 +82,7 @@
         color: $main2;
         font-size: 60px;
         @media #{$xs} {
-          font-size: 41px;
+          font-size: 31px;
         }
 
       }
@@ -96,7 +97,8 @@
 #toggle {
   position: fixed;
   z-index: 101;
-  background: $main2;
+  background: $white;
+  @include shadow;
   color: $main;
   font-weight: 900;
   top: 10px;

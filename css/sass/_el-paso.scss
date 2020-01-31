@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   @media #{$xs} {
+    @media #{$xs} {
 
       flex-wrap: wrap;
     }
@@ -62,4 +62,26 @@
       }
     }
   }
+
+  .buttons {
+    text-align: center;
+
+    .btn {
+      font-size: 31px;
+
+      span {
+        width: 50px!important;
+        height: 50px!important;
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+#content {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid rgba($main, .3);
+  border-bottom: 1px solid rgba($main, .3);
+
 }

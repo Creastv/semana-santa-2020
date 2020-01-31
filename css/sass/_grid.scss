@@ -39,6 +39,13 @@
   }
 }
 
+.col2 {
+  width: 50%;
+  @media #{$xs} {
+    width: 100%;
+  }
+}
+
 .col4 {
   width: 25%;
   @media #{$xs} {

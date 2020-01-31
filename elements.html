@@ -59,18 +59,27 @@
         </div>
         <div id="searchContainer" class="container-box">
             <div class="row">
-                <div class="col">
+                <div class="col1">
                     <div id="wrapSearch" class="wrap-search">
-                        <div class="search">
-                            <input id="searchInput" type="text" class="searchTerm" placeholder="Buscador pasos">
-                            <button type="submit" class="searchButton btn btn-gold-grad">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
+                        <form action="#" id="filters" class="search">
+                            <input id="searchInput" type="search" name="search" class="searchTerm"
+                                placeholder="Buscador de pasos">
+                            <i class="fa fa-search"></i>
+                        </form>
                     </div>
                 </div>
             </div>
+            <div class="container-box3">
+                <div id="searchresult">
+                    <div id="wrapersearchresult"></div>
+                    <div id="close-search">
+                        <a href="#" class=" btn btn-gold">Cerrar <span class='fas fa-times'></span></a>
+                    </div>
+        
+                </div>
+            </div>
         </div>
+        <div id="bgSearch"></div>
 
         <div class="container-box2">
             <h1>Semana Santa 2020</h1>
@@ -111,17 +120,17 @@
         <div class="container-box2">
             <h2>SearchBox</h2>
             <div class="row">
-                <div class="col">
+                <div class="col2">
                     <div class="wrap-search">
                         <div class="search">
                             <input type="text" class="searchTerm" placeholder="Buscador pasos">
-                            <button type="submit" class="searchButton btn btn-gold-grad">
+                            
                                 <i class="fa fa-search"></i>
-                            </button>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col2">
                     <div class="wrap-search">
                         <div class="title">
                             <h1>Jueves Santo</h1>
@@ -130,9 +139,10 @@
                         <div class="search">
                             <input  type="text" class="searchTerm search-close"
                                 placeholder="Buscador pasos">
-                            <button id="searchBtn" type="submit" class="searchButton btn btn-gold-grad">
+                            <button type="submit" class="searchButton btn btn-gold-grad">
                                 <i class="fa fa-search"></i>
                             </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -302,5 +312,6 @@
             </div>
         </footer>
         <script src="js/main.js" async defer></script>
+        <script src="./js/searchbar.js"></script>
     </body>
 </html>

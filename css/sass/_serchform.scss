@@ -3,7 +3,33 @@
   z-index: 51;
 }
 
+.activSearch {
+  position: fixed!important;
+  z-index: 51;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%,0)!important;
+  width: 100%;
+}
+
+#searchresult {
+  @include tranz;
+
+  #wrapersearchresult {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    @include tranz;
+  }
+
+  #close-search {
+    text-align: center;
+    display: none;
+  }
+}
+
 .wrap-search {
+  @include tranz;
   padding: 15px;
   background-color: $main;
   border-radius: 9px;
@@ -40,15 +66,23 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
+  @include tranz;
+
+  i {
+    position: absolute;
+    font-size: 24px;
+    top: 12px;
+    right: 12px;
+    color: $main2;
+  }
 }
 
 .searchTerm {
   width: 100%;
   border: 3px solid $main2;
-  border-right: none;
   padding: 5px;
-  height: 40px;
-  border-radius: 10px 0 0 10px;
+  height: 50px;
+  border-radius: 10px;
   outline: none;
   font-size: 21px;
   color: $main;
@@ -62,33 +96,41 @@
 
 .searchTerm:focus {
   color: $main;
-}
-
-.searchButton {
-  outline: 0;
-  margin: 0;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-
-  &:focus {
-    box-shadow: none;
-  }
+  border: 2px solid $main;
 }
 
 #bgSearch {
-  opacity: 1;
+  opacity: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba($main, 0.5);
+  height: 0;
+  background-color: rgba($main, 0.9);
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
   position: fixed;
   z-index: 50;
   top: 0;
+  @include tranz;
 }
 
 .bgSearch-open {
   opacity: 1!important;
+  height: 100%!important;
+  border-radius: 0!important;
 }
 
-/*Resize the wrap to see the search bar change!*/
+#wrapersearchresult::-webkit-scrollbar-track {
+
+  border-radius: 10px;
+  background-color: darken($main, 5);
+}
+
+#wrapersearchresult::-webkit-scrollbar {
+  width: 12px;
+  // background-color: #F5F5F5;
+}
+
+#wrapersearchresult::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: $main2;
+}
