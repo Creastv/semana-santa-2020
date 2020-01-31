@@ -35,6 +35,13 @@ body {
   padding-right: 15px;
 }
 
+.container-box3 {
+  max-width: 998px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,9 +57,24 @@ body {
           justify-content: center;
 }
 
+.col1 {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .col1 {
+    width: 100%;
+  }
+}
+
 .col4 {
-  margin: 10px;
-  background: red;
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  .col4 {
+    width: 50%;
+  }
 }
 
 .col3 {
@@ -261,7 +283,7 @@ body {
 
 .wraper-box {
   text-align: center;
-  margin: 20px;
+  margin: 10px;
   -webkit-transition: all .25s;
   transition: all .25s;
 }
@@ -273,8 +295,8 @@ body {
 .wraper-box .box {
   position: relative;
   background-size: cover !important;
-  height: 300px;
-  width: 300px;
+  height: 210px;
+  width: 100%;
   -webkit-transition: all .25s;
   transition: all .25s;
 }
@@ -288,13 +310,13 @@ body {
 
 .wraper-box .box .title {
   position: absolute;
-  bottom: 30px;
+  bottom: 15px;
   width: 100%;
 }
 
 .wraper-box .box .title h2 {
   color: #fff;
-  font-size: 38px;
+  font-size: 21px;
   padding: 10px;
 }
 
@@ -319,8 +341,6 @@ body {
   padding: 15px;
   background-color: #01306d;
   border-radius: 9px;
-  max-width: 400px;
-  min-width: 400px;
   margin: 20px;
   -webkit-box-shadow: 0 0 29px -1px rgba(0, 0, 0, 0.23);
   box-shadow: 0 0 29px -1px rgba(0, 0, 0, 0.23);
@@ -421,6 +441,16 @@ footer .logo {
   padding: 10px;
 }
 
+footer .logo a img {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+footer .logo a img:hover {
+  -webkit-box-shadow: 0 0 29px -1px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0 29px -1px rgba(0, 0, 0, 0.23);
+}
+
 footer .footer-info {
   background-color: #0146a0;
   text-align: center;
@@ -429,6 +459,10 @@ footer .footer-info {
 
 footer .footer-info p {
   color: #fff;
+}
+
+#baners {
+  padding: 50px 15px;
 }
 
 .baner {
@@ -524,7 +558,7 @@ footer .footer-info p {
 
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   min-height: 600px;
   overflow: hidden;
   position: relative;
@@ -538,7 +572,7 @@ footer .footer-info p {
 
 #hero #img-hero {
   position: relative;
-  height: 70vh;
+  height: 50vh;
   min-height: 600px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
@@ -548,8 +582,8 @@ footer .footer-info p {
   width: 100%;
   border-bottom-left-radius: 60% 600px;
   border-bottom-right-radius: 60% 600px;
-  margin-left: -9em;
-  padding-right: 18em;
+  margin-left: -15em;
+  padding-right: 30em;
   overflow: hidden;
 }
 
@@ -572,7 +606,7 @@ footer .footer-info p {
 #hero .copy-hero {
   position: absolute;
   top: 0;
-  height: 70vh;
+  height: 50vh;
   min-height: 600px;
   width: 100%;
   text-align: center;

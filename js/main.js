@@ -3,9 +3,9 @@ var searchInput = document.getElementById('searchInput');
 var wraperForm = document.getElementById('wrapSearch');
 var bgSearch = document.getElementById('bgSearch');
 
-searchBtn.addEventListener('click', function(){
-    searchInput.classList.remove('search-close');
-});
+// searchBtn.addEventListener('click', function(){
+//     searchInput.classList.remove('search-close');
+// });
 
 searchInput.addEventListener('focus', function(){
     var elem = document.createElement('div');
@@ -25,12 +25,12 @@ var wraper = document.getElementById("grad");
 var imgHero = document.getElementById("img-hero");
 var searchContainer = document.getElementById("searchContainer");
 var pixels = document.body.scrollTop || document.documentElement.scrollTop;
-wraper.style.background = `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(1, 48, 109, 1) 160%`;
+wraper.style.background = `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(1, 48, 109, 1) 400%`;
 var index = 100;
 searchContainer.style.WebkitTransform = `translate (0, -60px)`;
 window.addEventListener("scroll", function(){
     var pixels = document.body.scrollTop || document.documentElement.scrollTop;
-    wraper.style.background = `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(1, 48, 109, 1)  ${100 - pixels/2}%`;
+    wraper.style.background = `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(1, 48, 109, 1)  ${400 - pixels * 1.2}%`;
     imgHero.style.borderBottomLeftRadius = `  ${60 - pixels /2  }%  600px`;
     imgHero.style.borderBottomRightRadius = `  ${60 - pixels  /2  }%  600px`;
     if (pixels <= (160 - 70)) {

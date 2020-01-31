@@ -18,6 +18,13 @@
   padding-right: 15px;
 }
 
+.container-box3 {
+  max-width: 998px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -25,9 +32,18 @@
   justify-content: center;
 }
 
+.col1 {
+  width: 60%;
+  @media #{$xs} {
+    width: 100%;
+  }
+}
+
 .col4 {
-  margin: 10px;
-  background: red;
+  width: 25%;
+  @media #{$xs} {
+    width: 50%;
+  }
 }
 
 .col3 {
