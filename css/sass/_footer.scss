@@ -1,23 +1,50 @@
-footer{
-    background:$main;
-    padding: 50px 0 0 ;
-    .logo{
-        padding:10px;
-        a{
-            img{
-                @include tranz;
-                &:hover{
-                    @include shadow;
-                }
-            }
+footer {
+  background: $main;
+  padding: 50px 0 0;
+
+  .logo {
+    padding: 10px;
+
+    a {
+      img {
+        @include tranz;
+
+        &:hover {
+          @include shadow;
         }
+      }
     }
-    .footer-info{
-        background-color: lighten($main, 10%);
-        text-align: center;
-        padding:20px;
-        p{
-            color:#fff;
-        }
+  }
+
+  .footer-info {
+    background-color: lighten($main, 10%);
+    text-align: center;
+    padding: 20px;
+
+    p {
+      color: #fff;
     }
+  }
+}
+
+#scroll-top {
+opacity: 0;
+  position: fixed;
+  z-index: 20;
+  bottom: -100px;
+  right: 10px;
+  background: $main2;
+  padding: 10px;
+  border-radius: 9px;
+  color: $white;
+  width: 20px;
+  height: 20px;
+  font-size: 26px;
+  text-align: center;
+  @include shadow;
+  @include tranz;
+}
+.scroll-top-active{
+    opacity: 1!important;
+    bottom: 10px!important;
 }
