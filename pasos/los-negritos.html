@@ -7,10 +7,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="#01306d">
-        <title>Semana Santa 2020 Barea</title>
+        <title>Los Negritos | Semana Santa 2020 Barea</title>
         <meta name="description" content="">
-        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="icon" type="image/png" href="../img/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/swiper.min.css">
         <link rel="stylesheet" href="../css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
@@ -19,70 +20,74 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div id="abanico">
-            <div id="logo">
-                <a href="../index.html">
-                    <img src="../img/logo.jpg" alt="">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="https://www.barea.com/cash-carry/">Cash&Carry</a></li>
-                    <li><a href="https://www.barea.com/distribucion/">Distribución</a></li>
-                    <li><a href="https://www.barea.com/nuestras-marcas/">Nuestras marcas</a></li>
-                    <li><a href="https://www.barea.com/recetas/">Recetas</a></li>
-                    <li><a href="https://www.barea.com/ofertas/">Ofertas</a></li>
-                    <li><a href="https://www.barea.com/actualidad/">Actualidad</a></li>
-                    <li><a href="https://www.barea.com/contacto/">Contacto</a></li>
-                    <li><a href="https://www.barea.com/directorio-barea-grupo/">Directorio</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="hero">
-            <div id="toggle">
-                <img id="logo-scroll" src="../img/logo.jpg" alt="">
-               Menu <i class="fas fa-bars"></i>
-            </div>
-            <div id="img-hero">
-                <div id="grad"></div>
-            </div>
-            <div class="copy-hero">
-                <div class="copy">
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img src="../img/logo.jpg" alt="">
-                        </a>
-                    </div>
-                    <img class="label" src="../img/label.png" alt="">
-                    <h1>Semana Santa 2020 Sevilla</h1>
-                </div>
-            </div>
-        </div>
-        <div id="searchContainer" class="container-box">
-            <div class="row">
-                <div class="col1">
-                    <div id="wrapSearch" class="wrap-search">
-                        <form action="#" id="filters" class="search">
-                            <input id="searchInput" type="search" name="search" class="searchTerm"
-                                placeholder="Buscador de pasos">
-                            <i class="fa fa-search"></i>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="container-box3">
-                <div id="searchresult">
-                    <div id="wrapersearchresult"></div>
-                    <div id="close-search">
-                        <a href="#" class=" btn btn-gold">Cerrar <span class='fas fa-times'></span></a>
-                    </div>
         
+
+    <div id="abanico">
+        <div id="logo">
+            <a href="index.html">
+                <img src="../img/logo.jpg" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.barea.com/cash-carry/">Cash&Carry</a></li>
+                <li><a href="https://www.barea.com/distribucion/">Distribución</a></li>
+                <li><a href="https://www.barea.com/nuestras-marcas/">Nuestras marcas</a></li>
+                <li><a href="https://www.barea.com/recetas/">Recetas</a></li>
+                <li><a href="https://www.barea.com/ofertas/">Ofertas</a></li>
+                <li><a href="https://www.barea.com/actualidad/">Actualidad</a></li>
+                <li><a href="https://www.barea.com/contacto/">Contacto</a></li>
+                <li><a href="https://www.barea.com/directorio-barea-grupo/">Directorio</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="hero">
+        <div id="backToSearch">
+            <i class="fa fa-search"></i>
+        </div>
+        <div id="toggle">
+            <img id="logo-scroll" src="../img/logo.jpg" alt="">
+            <span>Menu</span> <i class="fas fa-bars"></i>
+        </div>
+        <div id="img-hero">
+            <div id="grad"></div>
+        </div>
+        <div class="copy-hero">
+            <div class="copy">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.jpg" alt="">
+                    </a>
+                </div>
+                <img class="label" src="../img/label.png" alt="">
+                <h1>Los Negritos</h1>
+                <h2>Semana Santa 2020</h2>
+            </div>
+        </div>
+    </div>
+    <div id="searchContainer" class="container-box">
+        <div class="row">
+            <div class="col1">
+                <div id="wrapSearch" class="wrap-search">
+                    <form action="#" id="filters" class="search">
+                        <input id="searchInput" type="text" name="se" class="searchTerm" placeholder="Buscador de Hermandades">
+                        <i class="fa fa-search"></i>
+                    </form>
                 </div>
             </div>
         </div>
-        <div id="bgSearch"></div>
+        <div class="container-box3">
+            <div id="searchresult">
+                <div id="wrapersearchresult"></div>
+                <div id="close-search">
+                    <a href="#" class=" btn btn-gold">Cerrar <span class='fas fa-times'></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bgSearch"></div>
+    <br>
         <div class="container-box3">
             <div id="paso">
                 <header>
@@ -98,14 +103,14 @@
                                     <img src="../img/insignias/los-negritos.jpg" alt="Los Negritos">
                                 </div>
                                 <div class="title">
-                                    <h1>Los Negritos</h1>
+                                    <h2>Los Negritos</h2>
                                     <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
                                 </div>
                             </div>
                             <div class="bottom">
                                 <div class="subtitle">
-                                    <h2>Santísimo Cristo de la Fundación y Nuestra Señora de los Ángeles
-                                        (Vulgo de los Negritos)</h2>
+                                    <h3>Santísimo Cristo de la Fundación y Nuestra Señora de los Ángeles
+                                        (Vulgo de los Negritos)</h3>
                                 </div>
                             </div>
                         </div>
@@ -152,8 +157,110 @@
                 aliquid incidunt voluptatum.</p>
         </div>
 
-      
+        <div class="container-box2">
+            <h2>Otros pasos de Viernes de Dolores</h2>
+            <div class="row">
+                <div class="swiper-container cofredia">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="../img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="../img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="../img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="../img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="../img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         
+            <hr>
+        </div>
+
         <div id="baners" class="container-box">
             <div class="row">
                 <div class="col">
@@ -206,7 +313,42 @@
                 T. 954 518 722</p>
             </div>
         </footer>
+
+        <div id="compartir">
+            <span>Compartir:</span>
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_whatsapp"></a>
+                <a class="a2a_button_facebook_messenger"></a>
+                <a class="a2a_button_copy_link"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
+        </div>
+        <div id="scroll-top"><i class="fas fa-sort-up"></i></div>
+
         <script src="../js/main.js" async defer></script>
         <script src="../js/searchbar.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <script>
+            var newSwiper = new Swiper('.cofredia', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>

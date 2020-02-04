@@ -5,11 +5,11 @@
   overflow: hidden;
   position: relative;
   @media #{$xs} {
-    min-height: inherit;
+    min-height: 380px;
   }
 
   #img-hero {
-    //   @include tranz
+    @include tranz;
     position: relative;
     height: 50vh;
     min-height: 600px;
@@ -25,7 +25,7 @@
     padding-right: 30em;
     overflow: hidden;
     @media #{$xs} {
-      min-height: inherit;
+      min-height: 380px;
     }
 
     #grad {
@@ -47,7 +47,7 @@
     width: 100%;
     text-align: center;
     @media #{$xs} {
-      min-height: inherit;
+      min-height: 380px;
     }
 
     .logo {
@@ -57,7 +57,7 @@
         background-color: $white;
         padding-top: 60px;
         display: inline-block;
-        margin-bottom: 100px;
+        margin-bottom: 25px;
         @media #{$xs} {
           margin-bottom: 20px;
           padding-top: 10px;
@@ -75,16 +75,27 @@
 
       .label {
         width: 90%;
-        max-width: 500px;
+        max-width: 600px;
       }
 
       h1 {
         color: $main2;
         font-size: 60px;
+        margin-bottom: 0;
         @media #{$xs} {
           font-size: 31px;
         }
 
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 31px;
+        font-weight: 300;
+        margin: 0;
+        @media #{$xs} {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -92,7 +103,8 @@
 
 #searchContainer {
   // transform: translate(0, -80px);
-  @include tranz;
+  margin-top: -80px;
+  // @include tranz;
 }
 
 #toggle {
@@ -100,12 +112,17 @@
   z-index: 101;
   background: $white;
   @include shadow;
+  @include tranz;
   color: $main;
   font-weight: 900;
   top: 10px;
   right: 10px;
   padding: 10px;
   cursor: pointer;
+
+  span {
+    color: $main;
+  }
 
   .logo-scroll-active {
     width: 90px!important;
@@ -119,6 +136,29 @@
 
 }
 
+#backToSearch {
+  position: fixed;
+  z-index: 101;
+  background: $main;
+  @include shadow;
+  color: $white;
+  font-weight: 900;
+  top: 10px;
+  right: -110px;
+  padding: 10px;
+  height: 42px;
+  cursor: pointer;
+  @include tranz;
+
+  i {
+    margin-top: 12px;
+  }
+}
+
+.backToSearch-active {
+  right: 10px!important;
+}
+
 #abanico {
   @include tranz;
   width: 100%;
@@ -127,7 +167,7 @@
   z-index: 100;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
-  background-color: $main;
+  background-color: rgba($main, 0.9);
   overflow: hidden;
 
   #logo {

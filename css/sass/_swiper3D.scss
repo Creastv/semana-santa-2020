@@ -1,0 +1,37 @@
+.dias-ss {
+  width: 100%;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+
+  .swiper-slide {
+    background-position: center!important;
+    background-size: cover!important;
+    width: 250px!important;
+    height: 250px!important;
+
+    .box {
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  position: inherit!important;
+
+  .swiper-pagination-bullet {
+    margin: 2px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $main2;
+  }
+}
+
+.cofredia {
+  @media #{$xs} {
+    
+  }
+}

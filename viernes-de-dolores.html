@@ -7,11 +7,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="#01306d">
-        <title>Semana Santa 2020 Barea</title>
+        <title>Viernes de Dolores | Semana Santa 2020 Barea</title>
         <meta name="description" content="">
         <link rel="icon" type="image/png" href="img/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
+       
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     </head>
@@ -23,7 +25,6 @@
         <div id="abanico">
             <div id="logo">
                 <a href="index.html">
-                    <img id="logo-scroll" src="./img/logo.jpg" alt="">
                     <img src="./img/logo.jpg" alt="">
                 </a>
             </div>
@@ -40,10 +41,14 @@
                 </ul>
             </nav>
         </div>
-
+        
         <div id="hero">
+            <div id="backToSearch">
+                <i class="fa fa-search"></i>
+            </div>
             <div id="toggle">
-               Menu <i class="fas fa-bars"></i>
+                <img id="logo-scroll" src="./img/logo.jpg" alt="">
+                <span>Menu</span> <i class="fas fa-bars"></i>
             </div>
             <div id="img-hero">
                 <div id="grad"></div>
@@ -56,7 +61,8 @@
                         </a>
                     </div>
                     <img class="label" src="./img/label.png" alt="">
-                    <h1>Semana Santa 2020 Sevilla</h1>
+                    <h1>Viernes de Dolores</h1>
+                    <h2>Semana Santa 2020 Sevilla</h2>
                 </div>
             </div>
         </div>
@@ -65,8 +71,7 @@
                 <div class="col1">
                     <div id="wrapSearch" class="wrap-search">
                         <form action="#" id="filters" class="search">
-                            <input id="searchInput" type="search" name="search" class="searchTerm"
-                                placeholder="Buscador de pasos">
+                            <input id="searchInput" type="text" name="se" class="searchTerm" placeholder="Buscador de Hermandades">
                             <i class="fa fa-search"></i>
                         </form>
                     </div>
@@ -78,11 +83,11 @@
                     <div id="close-search">
                         <a href="#" class=" btn btn-gold">Cerrar <span class='fas fa-times'></span></a>
                     </div>
-        
                 </div>
             </div>
         </div>
         <div id="bgSearch"></div>
+        <br>
         <div class="container-box3">
             <div class="bar">
                 <div class="img">
@@ -182,7 +187,183 @@
             </div>
         </div>
 
-      
+        <div class="container-box2">
+            <div class="section-title">
+                <h2>Plano</h2>
+            </div>
+            <div class="row">
+                <div class="wraper-responsive">
+                    <img src="img/dias/plano.jpg" alt="Plano">
+                </div>
+            </div>
+            <div class="buttons text-center">
+                <a href="#" class="btn btn-gold-grad left-icon"><span class="fas fa-download"></span> Descarga el plano </a>
+            </div>
+            <hr>
+        </div>
+        <div class="container-box2">
+            <div class="section-title">
+                <h2>Horario</h2>
+            </div>
+            <div class="row">
+                <div class="wraper-responsive">
+                    <img src="img/dias/horario.jpg" alt="Plano">
+                </div>
+            </div>
+            <div class="buttons text-center">
+                <a href="#" class="btn btn-gold-grad left-icon"><span class="fas fa-download"></span> Descarga el horario </a>
+            </div>
+            <hr>
+        </div>
+       
+        <div class="container-box2"> 
+            <div class="row">
+                <div class="section-title">
+                    <h2>Semana Santa 2020</h2>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper dias-ss">
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Viernes de Dolores</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/sabado-pasion.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Sábado de Pasión</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/domingo-de-ramos.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Domingo de Ramos</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/lunes-santo.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Lunes Santo</h2>
+                                    </div>
+                                </div>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/martes-santo.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Martes Santo</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/miercoles-santo.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Mieércoles Santo</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/jueves-santo.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Jueves Santo</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-santo-madrugada.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Viernes Santo <small>(madrugada)</small></h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-santo.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Viernes Santo</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/sabado-santo.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Sabado Santo</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/domingo-de-resurreccion.jpg);">
+                            <div class="wraper-box">
+                                <a href="viernes-de-dolores.html">
+                                    <div class="box">
+                                        <div class="title">
+                                            <h2>Domingo de resurrección</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="viernes-de-dolores.html" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <hr>
+        </div>
+        
+
+        
         
         <div id="baners" class="container-box">
             <div class="row">
@@ -236,7 +417,45 @@
                 T. 954 518 722</p>
             </div>
         </footer>
+
+        <div id="compartir">
+            <span>Compartir:</span>
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_whatsapp"></a>
+                <a class="a2a_button_facebook_messenger"></a>
+                <a class="a2a_button_copy_link"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
+        </div>
+        <div id="scroll-top"><i class="fas fa-sort-up"></i></div>
+
         <script src="js/main.js" async defer></script>
-        <script src="./js/searchbar.js"></script>
+        <script src="js/searchbar.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                loop: true,
+                coverflowEffect: {
+                    rotate: 30,
+                    stretch: 10,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
     </body>
 </html>

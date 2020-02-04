@@ -4,17 +4,37 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media #{$xs} {
-
-      flex-wrap: wrap;
-    }
+    // @media #{$xs} {
+    //   flex-wrap: wrap;
+    // }
 
     .right {
       padding: 50px;
       text-align: center;
+      @media #{$xs} {
+        padding: 0 10px 0 0;
+      }
 
-      img {}
+      img {
+        // @media #{$xs} {
+        //   width: 100%;
+        // }
+      }
     }
+
+    .col:first-child {
+      @media #{$xs} {
+        position: absolute;
+        z-index: -1;
+        opacity: .3;
+      }
+    }
+
+    // .col:last-child {
+    //   @media #{$xs} {
+    //     width: 80%;
+    //   }
+    // }
 
     .left {
       .top {
@@ -35,11 +55,10 @@
           margin: 0 10px 0 0;
           border: 2px solid $main2;
 
-          img {}
         }
 
         .title {
-          h1 {
+          h2 {
             font-size: 31px;
             color: $main;
             margin: 0;
@@ -55,7 +74,7 @@
       }
 
       .subtitle {
-        h2 {
+        h3 {
           color: $main2;
           font-size: 31px;
         }
@@ -68,20 +87,23 @@
 
     .btn {
       font-size: 31px;
-
-      span {
-        width: 50px!important;
-        height: 50px!important;
-        font-size: 26px;
+      @media #{$xs} {
+        font-size: 21px;
+        display: block;
+      }
+        span {
+          width: 50px!important;
+          height: 50px!important;
+          font-size: 26px;
+        }
       }
     }
   }
-}
 
-#content {
-  padding-top: 25px;
-  margin-top: 25px;
-  border-top: 1px solid rgba($main, .3);
-  border-bottom: 1px solid rgba($main, .3);
+  #content {
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid rgba($main, .3);
+    border-bottom: 1px solid rgba($main, .3);
 
-}
+  }

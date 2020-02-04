@@ -11,7 +11,9 @@
         <meta name="description" content="">
         <link rel="icon" type="image/png" href="img/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     </head>
@@ -22,7 +24,7 @@
 
         <div id="abanico">
             <div id="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="./img/logo.jpg" alt="">
                 </a>
             </div>
@@ -39,11 +41,14 @@
                 </ul>
             </nav>
         </div>
-
+        
         <div id="hero">
+            <div id="backToSearch">
+                <i class="fa fa-search"></i>
+            </div>
             <div id="toggle">
                 <img id="logo-scroll" src="./img/logo.jpg" alt="">
-               Menu <i class="fas fa-bars"></i>
+                Menu <i class="fas fa-bars"></i>
             </div>
             <div id="img-hero">
                 <div id="grad"></div>
@@ -51,7 +56,7 @@
             <div class="copy-hero">
                 <div class="copy">
                     <div class="logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="./img/logo.jpg" alt="">
                         </a>
                     </div>
@@ -65,8 +70,7 @@
                 <div class="col1">
                     <div id="wrapSearch" class="wrap-search">
                         <form action="#" id="filters" class="search">
-                            <input id="searchInput" type="search" name="search" class="searchTerm"
-                                placeholder="Buscador de pasos">
+                            <input id="searchInput" type="text" name="se" class="searchTerm" placeholder="Buscador de hermandades">
                             <i class="fa fa-search"></i>
                         </form>
                     </div>
@@ -78,21 +82,21 @@
                     <div id="close-search">
                         <a href="#" class=" btn btn-gold">Cerrar <span class='fas fa-times'></span></a>
                     </div>
-        
                 </div>
             </div>
         </div>
         <div id="bgSearch"></div>
+        <br>
 
         <div class="container-box2">
             <h1>Semana Santa 2020</h1>
             <hr>
-            <h2>Heder el paso</h2>
+            <h2>Header</h2>
             <article id="paso">
                 <header>
                     <div class="col">
                         <div class="right">
-                            <img src="./img/nazarenios/los-negritos.png" alt="Los Negritos">
+                            <img src="img/nazarenios/los-negritos.png" alt="Los Negritos">
                         </div>
                     </div>
                     <div class="col">
@@ -116,47 +120,155 @@
                     </div>
                 </header>
             </article>
-            
             <hr>
         </div>
-
         <div class="container-box2">
             <h2>SearchBox</h2>
             <div class="row">
-                <div class="col2">
                     <div class="wrap-search">
                         <div class="search">
-                            <input type="text" class="searchTerm" placeholder="Buscador pasos">
-                            
-                                <i class="fa fa-search"></i>
-                            
+                            <input type="text" class="searchTerm" placeholder="Buscador de hermandades">
+        
+                            <i class="fa fa-search"></i>
                         </div>
                     </div>
-                </div>
-                <div class="col2">
-                    <div class="wrap-search">
-                        <div class="title">
-                            <h1>Jueves Santo</h1>
-                            <p>18 de abril</p>
-                        </div>
-                        <div class="search">
-                            <input  type="text" class="searchTerm search-close"
-                                placeholder="Buscador pasos">
-                            <button type="submit" class="searchButton btn btn-gold-grad">
-                                <i class="fa fa-search"></i>
-                            </button>
-                            
-                        </div>
-                    </div>
-                </div>
             </div>
             <hr>
         </div>
         <div class="container-box2">
+            <h2>3D Flip Effect</h2>
+            <a href="https://github.com/nolimits4web/Swiper/blob/master/demos/250-effect-flip.html">Source code</a>
+            <br>
+            <div class="row">
+                <!-- Swiper -->
+                <div class="swiper-container dias-ss">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box" >
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box" >
+                                <div class="box" >
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="wraper-box">
+                                <div class="box">
+                                    <div class="title">
+                                        <h2>Viernes de Dolores</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide" style="background-image:url(0)"></div> -->
+                    </div>
+                    <!-- Add Pagination -->
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <hr>
+        </div>
+       
+       
+        <div class="container-box2">
             <h2>Box</h2>
             <p>Flex-box</p>
             <div class="row">
-                <div class="col">
+                <div class="col4">
                     <div class="wraper-box">
                             <div class="box" style="background:url(img/dias/viernes-de-dolores.jpg);">
                                 <div class="title">
@@ -166,7 +278,7 @@
                         <a href="#" class="btn btn-blue-grad">Ver pasos</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col4">
                     <div class="wraper-box">
                         <div class="box" style="background:url(img/dias/viernes-de-dolores.jpg);">
                             <div class="title">
@@ -176,7 +288,17 @@
                         <a href="#" class="btn btn-blue-grad">Ver pasos</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col4">
+                    <div class="wraper-box">
+                        <div class="box" style="background:url(img/dias/viernes-de-dolores.jpg);">
+                            <div class="title">
+                                <h2>Viernes de Dolores</h2>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-blue-grad">Ver pasos</a>
+                    </div>
+                </div>
+                <div class="col4">
                     <div class="wraper-box">
                         <div class="box" style="background:url(img/dias/viernes-de-dolores.jpg);">
                             <div class="title">
@@ -227,6 +349,140 @@
             <hr>
         </div>
         <div class="container-box2">
+            <h2>Otros pasos de Viernes de Dolores</h2>
+            <div class="row">
+                <div class="swiper-container cofredia">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bar">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./img/insignias/los-negritos.jpg" alt="Los Negritos">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="#">
+                                        <h2>Los Negritos</h2>
+                                        <p>Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)</p>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        
+            <hr>
+        </div>
+              
+       
+        <div class="container-box2">
+            <div class="section-title">
+                <h2>Plano</h2>
+            </div>
+            <div class="row">
+                <div class="wraper-responsive">
+                    <img src="img/dias/plano.jpg" alt="Plano">
+                </div>
+            </div>
+            <div class="buttons text-center">
+                <a href="#" class="btn btn-gold-grad left-icon"><span class="fas fa-download"></span> Descarga el plano </a>
+            </div>
+            <hr>
+        </div>
+        <div class="container-box2">
+            <div class="section-title">
+                <h2>Horario</h2>
+            </div>
+            <div class="row">
+                <div class="wraper-responsive">
+                    <img src="img/dias/horario.jpg" alt="Plano">
+                </div>
+            </div>
+            <div class="buttons text-center">
+                <a href="#" class="btn btn-gold-grad left-icon"><span class="fas fa-download"></span> Descarga el horario </a>
+            </div>
+            <hr>
+        </div>
+       
+        <div class="container-box2">
             <h1>Semana Santa 2020</h1>
             <hr>
             <h2>Buttons</h2>
@@ -260,8 +516,27 @@
         
             <hr>
         </div>
+
+        <div class="container-box2">
+            <div class="section-title">
+                <h2>Semana Santa 2020</h2>
+            </div>
+
+            <h1 class="text-center">Semana Santa 2020</h1>
+            <h2>Semana Santa 2020</h>
+            <h3>Semana Santa 2020</h3>
+            <h4>Semana Santa 2020</h4>
+            <h5>Semana Santa 2020</h5>
+            <h6>Semana Santa 2020</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ut! Facere laboriosam autem repellendus.
+                Labore asperiores unde quisquam odit. Quidem sit nihil dicta consequuntur. Exercitationem, itaque? Veniam
+                distinctio ipsam molestias?</p>
+            <p>Semana Santa 2020</p>
+            <hr>
+        </div>
         
-        <div class="container-box">
+        
+        <div class="container-box2">
             <h2>Baners</h2>
             <div class="row">
                 <div class="col">
@@ -314,7 +589,63 @@
                 T. 954 518 722</p>
             </div>
         </footer>
+        <div id="compartir">
+            <span>Compartir:</span>
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_whatsapp"></a>
+                <a class="a2a_button_facebook_messenger"></a>
+                <a class="a2a_button_copy_link"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
+        </div>
+        <div id="scroll-top"><i class="fas fa-sort-up"></i></div>
+
         <script src="js/main.js" async defer></script>
         <script src="./js/searchbar.js"></script>
+        <script src="js/swiper.min.js"></script>
+
+        <script>
+             var swiper = new Swiper('.dias-ss', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    loop: true,
+                    coverflowEffect: {
+                        rotate: 30,
+                        stretch: 10,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                });
+        </script>
+                <script>
+                    var newSwiper = new Swiper('.cofredia', {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                            loop: true,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            breakpoints: {
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                            },
+                        });
+                </script>
+        
+
     </body>
 </html>

@@ -28,23 +28,58 @@ footer {
 }
 
 #scroll-top {
-opacity: 0;
+  opacity: 0;
   position: fixed;
   z-index: 20;
   bottom: -100px;
   right: 10px;
-  background: $main2;
+  background: $main;
   padding: 10px;
-  border-radius: 9px;
   color: $white;
   width: 20px;
-  height: 20px;
+  height: 32px;
   font-size: 26px;
   text-align: center;
   @include shadow;
   @include tranz;
+
+  i {
+    padding: 8px 0;
+  }
 }
-.scroll-top-active{
-    opacity: 1!important;
-    bottom: 10px!important;
+
+.scroll-top-active {
+  opacity: 1!important;
+  bottom: 10px!important;
+}
+
+#compartir {
+  position: fixed;
+  z-index: 101;
+  background: $white;
+  @include shadow;
+  @include tranz;
+  color: $main;
+  font-weight: 900;
+  opacity: 0;
+  bottom: -100px;
+  right: 50px;
+  padding: 10px;
+  cursor: pointer;
+
+  span {
+    color: $main;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .a2a_kit {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.compartir-active {
+  bottom: 10px!important;
+  opacity: 1!important;
 }

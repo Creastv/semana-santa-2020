@@ -1,7 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  @include tranz;
 }
-.overflow-hidden{
-    overflow: hidden;
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+hr {
+  border-top: 1px solid rgba(1, 48, 109, 0.3);
+}
+a{
+  outline: 0;
 }

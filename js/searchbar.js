@@ -125,14 +125,15 @@ searchField.addEventListener('input', (e) => {
 
 searchInput.addEventListener('focus', function () {
     searchContainer.classList.add('activSearch');
+    // searchContainer.style.marginTop = `0px`;
     wraperForm.style.background = '#b29162';
     searchResultsContainer.style.display = 'block';
     bgSearch.classList.add('bgSearch-open');
     closeSearch.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-
-
+    document.body.classList.add('overflow-hidden');
 });
+
+
 searchInput.addEventListener('blur', function () {
     wraperForm.style.background = '#01306d';
 });
@@ -143,12 +144,12 @@ bgSearch.addEventListener('click', function(){
     bgSearch.classList.remove('bgSearch-open');
     searchResultsContainer.style.display = 'none';
     closeSearch.style.display = 'none';
-    document.body.style.overflow = 'inherit';
+    document.body.classList.remove('overflow-hidden');
 });
 closeSearch.addEventListener('click', function () {
     searchContainer.classList.remove('activSearch');
     bgSearch.classList.remove('bgSearch-open');
     searchResultsContainer.style.display = 'none';
     closeSearch.style.display = 'none';
-    document.body.style.overflow = 'inherit';
+    document.body.classList.remove('overflow-hidden');
 });

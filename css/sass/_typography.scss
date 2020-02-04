@@ -37,6 +37,38 @@ a {
   }
 
   &:focus {
-    color:$main2;
+    color: $main2;
+  }
+}
+
+.text-center {
+  display: block;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin: 30px 0;
+
+  &:before {
+    content: "";
+    width: 50px;
+    height: 80px;
+    background: url("../img/signet.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -13px);
+
+  }
+
+  h2 {
+    font-size: 41px;
+    margin: 0;
   }
 }
