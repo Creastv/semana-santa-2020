@@ -51,6 +51,9 @@
   @media #{$xs} {
     width: 50%;
   }
+  @media #{$xxx} {
+    width: 100%;
+  }
 }
 
 .col3 {

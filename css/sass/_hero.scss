@@ -52,186 +52,195 @@
 
     .logo {
       display: block;
+      @media #{$xxx} {
+        text-align: left;
+      }
+        a {
+          background-color: $white;
+          padding-top: 60px;
+          display: inline-block;
+          margin-bottom: 25px;
+          @media #{$xs} {
+            margin-bottom: 20px;
+            padding-top: 10px;
+          }
+        }
+      }
+
+      .copy {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: absolute;
+        width: 100%;
+        padding: 0 20px;
+
+        .label {
+          width: 90%;
+          max-width: 600px;
+        }
+
+        h1 {
+          color: $main2;
+          font-size: 60px;
+          margin-bottom: 0;
+          @media #{$xs} {
+            font-size: 31px;
+          }
+
+        }
+
+        h2 {
+          color: #fff;
+          font-size: 31px;
+          font-weight: 300;
+          margin: 0;
+          @media #{$xs} {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  #searchContainer {
+    // transform: translate(0, -80px);
+    margin-top: -80px;
+    // @include tranz;
+  }
+
+  #toggle {
+    position: fixed;
+    z-index: 101;
+    background: $white;
+    @include shadow;
+    @include tranz;
+    color: $main;
+    font-weight: 900;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    @media #{$xxx} {
+      font-size: 10px;
+    }
+
+    span {
+      color: $main;
+      @media #{$xxx} {
+        font-size: 12px;
+      }
+
+    }
+
+    .logo-scroll-active {
+      width: 90px!important;
+    }
+
+    #logo-scroll {
+      @include tranz;
+      width: 0;
+      vertical-align: middle;
+    }
+
+  }
+
+  #backToSearch {
+    position: fixed;
+    z-index: 101;
+    background: $main;
+    @include shadow;
+    color: $white;
+    font-weight: 900;
+    top: 10px;
+    right: -110px;
+    padding: 10px;
+    height: 42px;
+    cursor: pointer;
+    @include tranz;
+
+    i {
+      margin-top: 12px;
+    }
+  }
+
+  .backToSearch-active {
+    right: 10px!important;
+  }
+
+  #abanico {
+    @include tranz;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 100;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: rgba($main, 0.9);
+    overflow: hidden;
+
+    #logo {
+      @include tranz;
+      text-align: center;
+      opacity: 0;
+      display: block;
 
       a {
         background-color: $white;
         padding-top: 60px;
         display: inline-block;
-        margin-bottom: 25px;
-        @media #{$xs} {
-          margin-bottom: 20px;
-          padding-top: 10px;
-        }
+        margin-bottom: 100px;
       }
     }
 
-    .copy {
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 0%);
+    .logo-visible {
+      opacity: 1!important;
+    }
+
+    nav {
+      text-align: center;
       position: absolute;
-      width: 100%;
-      padding: 0 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
 
-      .label {
-        width: 90%;
-        max-width: 600px;
-      }
+      ul {
+        list-style: none;
+        padding: 0;
 
-      h1 {
-        color: $main2;
-        font-size: 60px;
-        margin-bottom: 0;
-        @media #{$xs} {
-          font-size: 31px;
-        }
+        li {
+          opacity: 0;
 
-      }
+          a {
+            color: $white;
+            font-size: 28px;
+            font-weight: 900;
+            text-decoration: none;
+            padding: 3px 10px;
 
-      h2 {
-        color: #fff;
-        font-size: 31px;
-        font-weight: 300;
-        margin: 0;
-        @media #{$xs} {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
-#searchContainer {
-  // transform: translate(0, -80px);
-  margin-top: -80px;
-  // @include tranz;
-}
-
-#toggle {
-  position: fixed;
-  z-index: 101;
-  background: $white;
-  @include shadow;
-  @include tranz;
-  color: $main;
-  font-weight: 900;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  cursor: pointer;
-
-  span {
-    color: $main;
-  }
-
-  .logo-scroll-active {
-    width: 90px!important;
-  }
-
-  #logo-scroll {
-    @include tranz;
-    width: 0;
-    vertical-align: middle;
-  }
-
-}
-
-#backToSearch {
-  position: fixed;
-  z-index: 101;
-  background: $main;
-  @include shadow;
-  color: $white;
-  font-weight: 900;
-  top: 10px;
-  right: -110px;
-  padding: 10px;
-  height: 42px;
-  cursor: pointer;
-  @include tranz;
-
-  i {
-    margin-top: 12px;
-  }
-}
-
-.backToSearch-active {
-  right: 10px!important;
-}
-
-#abanico {
-  @include tranz;
-  width: 100%;
-  height: 0;
-  position: fixed;
-  z-index: 100;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
-  background-color: rgba($main, 0.9);
-  overflow: hidden;
-
-  #logo {
-    @include tranz;
-    text-align: center;
-    opacity: 0;
-    display: block;
-
-    a {
-      background-color: $white;
-      padding-top: 60px;
-      display: inline-block;
-      margin-bottom: 100px;
-    }
-  }
-
-  .logo-visible {
-    opacity: 1!important;
-  }
-
-  nav {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        opacity: 0;
-
-        a {
-          color: $white;
-          font-size: 28px;
-          font-weight: 900;
-          text-decoration: none;
-          padding: 3px 10px;
-
-          &:hover {
-            background-color: $main2;
+            &:hover {
+              background-color: $main2;
+            }
           }
         }
-      }
 
-      .liVisible {
-        @include tranz;
-        -webkit-transform: translate(0%, 40%);
-        -moz-transform: translate(0%, 40%);
-        -ms-transform: translate(0%, 40%);
-        -o-transform: translate(0%, 40%);
-        transform: translate(0%, 40%);
-        opacity: 1 !important;
+        .liVisible {
+          @include tranz;
+          -webkit-transform: translate(0%, 40%);
+          -moz-transform: translate(0%, 40%);
+          -ms-transform: translate(0%, 40%);
+          -o-transform: translate(0%, 40%);
+          transform: translate(0%, 40%);
+          opacity: 1 !important;
+        }
       }
     }
   }
-}
 
-.abanico-open {
+  .abanico-open {
 
-  top: 0!important;
-  border-radius: 0!important;
-  height: 100%!important;
-}
+    top: 0!important;
+    border-radius: 0!important;
+    height: 100%!important;
+  }

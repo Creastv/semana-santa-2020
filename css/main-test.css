@@ -94,36 +94,6 @@ a {
   outline: 0;
 }
 
-#preloader {
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 999999999999;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all .25s;
-  transition: all .25s;
-}
-
-#preloader iframe {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.preloader-close {
-  -webkit-transform: scale(0) !important;
-          transform: scale(0) !important;
-  opacity: 0;
-  border-radius: 100%;
-  background: #01306d;
-}
-
 .container {
   width: 100%;
   padding-left: 15px;
@@ -193,12 +163,6 @@ a {
 @media only screen and (max-width: 768px) {
   .col4 {
     width: 50%;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .col4 {
-    width: 100%;
   }
 }
 
@@ -366,14 +330,6 @@ a {
   transition: all .25s;
 }
 
-@media only screen and (max-width: 340px) {
-  .bar {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: center;
-  }
-}
-
 .bar:hover {
   -webkit-box-shadow: 0 0 0 3px rgba(1, 48, 109, 0.4);
           box-shadow: 0 0 0 3px rgba(1, 48, 109, 0.4);
@@ -479,7 +435,7 @@ a {
 .activSearch {
   position: fixed !important;
   z-index: 501 !important;
-  margin-top: 0 !important;
+  margin-top: 0px !important;
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0) !important;
@@ -521,12 +477,6 @@ a {
   .wrap-search {
     max-width: inherit;
     min-width: inherit;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .wrap-search {
-    margin: 20px 0;
   }
 }
 
@@ -580,12 +530,6 @@ a {
   transition: all .25s;
 }
 
-@media only screen and (max-width: 768px) {
-  .searchTerm {
-    font-size: 15px;
-  }
-}
-
 .search-close {
   width: 0;
   padding: 5px 0;
@@ -628,7 +572,6 @@ a {
 #wrapersearchresult::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #b29162;
 }
 
@@ -706,22 +649,10 @@ footer .footer-info p {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 340px) {
-  #compartir {
-    padding: 5px;
-  }
-}
-
 #compartir span {
   color: #01306d;
   display: inline-block;
   vertical-align: middle;
-}
-
-@media only screen and (max-width: 568px) {
-  #compartir span {
-    font-size: 10px;
-  }
 }
 
 #compartir .a2a_kit {
@@ -732,12 +663,6 @@ footer .footer-info p {
 .compartir-active {
   bottom: 10px !important;
   opacity: 1 !important;
-}
-
-@media only screen and (max-width: 340px) {
-  .compartir-active {
-    display: none;
-  }
 }
 
 #baners {
@@ -812,17 +737,6 @@ footer .footer-info p {
           align-items: center;
 }
 
-@media only screen and (max-width: 340px) {
-  #paso header .left .top {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 #paso header .left .top .img {
   border-radius: 100%;
   overflow: hidden;
@@ -853,34 +767,8 @@ footer .footer-info p {
   font-size: 31px;
 }
 
-@media only screen and (max-width: 340px) {
-  #paso header .left .subtitle h3 {
-    font-size: 21px;
-    text-align: center;
-  }
-}
-
-#paso header #content {
-  padding-top: 25px;
-  margin-top: 25px;
-  border-top: 1px solid rgba(1, 48, 109, 0.3);
-  border-bottom: 1px solid rgba(1, 48, 109, 0.3);
-}
-
-@media only screen and (max-width: 340px) {
-  #paso header #content p {
-    text-align: justify !important;
-  }
-}
-
 #paso .buttons {
   text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  #paso .buttons {
-    text-align: center;
-  }
 }
 
 #paso .buttons .btn {
@@ -894,26 +782,17 @@ footer .footer-info p {
   }
 }
 
-@media only screen and (max-width: 340px) {
-  #paso .buttons .btn {
-    font-size: 16px !important;
-    display: block;
-    white-space: inherit;
-  }
-}
-
 #paso .buttons .btn span {
   width: 50px !important;
   height: 50px !important;
   font-size: 26px;
 }
 
-@media only screen and (max-width: 340px) {
-  #paso .buttons .btn span {
-    width: 30px !important;
-    height: 30px !important;
-    font-size: 16px !important;
-  }
+#content {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid rgba(1, 48, 109, 0.3);
+  border-bottom: 1px solid rgba(1, 48, 109, 0.3);
 }
 
 #hero {
@@ -982,12 +861,6 @@ footer .footer-info p {
 
 #hero .copy-hero .logo {
   display: block;
-}
-
-@media only screen and (max-width: 340px) {
-  #hero .copy-hero .logo {
-    text-align: left;
-  }
 }
 
 #hero .copy-hero .logo a {
@@ -1064,20 +937,8 @@ footer .footer-info p {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 340px) {
-  #toggle {
-    font-size: 10px;
-  }
-}
-
 #toggle span {
   color: #01306d;
-}
-
-@media only screen and (max-width: 340px) {
-  #toggle span {
-    font-size: 12px;
-  }
 }
 
 #toggle .logo-scroll-active {

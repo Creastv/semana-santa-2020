@@ -10,6 +10,10 @@
   align-items: center;
   align-content: stretch;
   @include tranz;
+  @media #{$xxx} {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
   &:hover {
     box-shadow: 0 0 0 3px rgba($main, 0.4);

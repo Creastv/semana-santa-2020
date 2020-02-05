@@ -66,11 +66,17 @@ footer {
   right: 50px;
   padding: 10px;
   cursor: pointer;
+  @media #{$xxx} {
+    padding: 5px;
+  }
 
   span {
     color: $main;
     display: inline-block;
     vertical-align: middle;
+    @media #{$xxs} {
+      font-size: 10px;
+    }
   }
 
   .a2a_kit {
@@ -82,4 +88,7 @@ footer {
 .compartir-active {
   bottom: 10px!important;
   opacity: 1!important;
-}
+  @media #{$xxx} {
+    display: none;
+  }
+  }

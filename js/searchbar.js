@@ -4,7 +4,7 @@ var meals = [
         title: 'Pino Montano',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
 
     {
@@ -12,21 +12,21 @@ var meals = [
         title: 'Bendiciín y Esperanza',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
     {
         id: 3,
         title: 'Los Negritos',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
     {
         id: 4,
         title: 'Pino Montano',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
 
     {
@@ -34,21 +34,21 @@ var meals = [
         title: 'Bendiciín y Esperanza',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
     {
         id: 6,
         title: 'Los Negritos',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
     {
         id: 7,
         title: 'Pino Montano',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
 
     {
@@ -56,14 +56,14 @@ var meals = [
         title: 'Bendiciín y Esperanza',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     },
     {
         id: 9,
         title: 'Los Negritos',
         direction: 'Capilla de Ntra. Sra. de los Ángeles (C/ Recaredo, 19)',
         imagen: 'los-negritos.jpg',
-        link: 'https://google.es'
+        link: 'pasos/los-negritos.html'
     }
 ];
 
@@ -75,6 +75,7 @@ var wraperForm = document.getElementById('wrapSearch');
 var bgSearch = document.getElementById('bgSearch');
 var closeSearch = document.getElementById('close-search');
 var element = document.querySelector('form');
+var url = window.location.origin + '/ssbarea/';
 
 element.addEventListener('submit', event => {
     event.preventDefault();
@@ -102,18 +103,18 @@ searchField.addEventListener('input', (e) => {
         p.setAttribute('class', 'bar');
         p.innerHTML = `
             <div class="img">
-                <a href="${element.link}">
-                    <img src="./img/insignias/${element.imagen}" alt="${element.title}">
+                <a href="${url}${element.link}">
+                    <img src="${url}img/insignias/${element.imagen}" alt="${element.title}">
                 </a>
             </div>
             <div class="title">
-                <a href="${element.link}">
+                <a href="${url}${element.link}">
                     <h2>${element.title}</h2>
                     <p>${element.direction}</p>
                 </a>
             </div>
             <div class="link">
-                <a href="${element.link}" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
+                <a href="${url}${element.link}" class="btn btn-gold-grad"><i class="fas fa-chevron-right"></i></a>
             </div>
             </div>
         `;

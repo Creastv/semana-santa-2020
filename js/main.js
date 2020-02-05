@@ -84,6 +84,8 @@ var iconToggle = document.querySelector('#toggle i');
 toggle.addEventListener('click', function(){
     abanico.classList.toggle('abanico-open');
     document.body.classList.toggle('overflow-hidden');
+    backToSearch.classList.remove('backToSearch-active');
+    toggle.style.right = '10px';
     if (textToggle.innerHTML == "Cerar") {
         textToggle.innerHTML = "Menu";
         iconToggle.className = "fas fa-bars";

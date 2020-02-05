@@ -14,12 +14,6 @@
       @media #{$xs} {
         padding: 0 10px 0 0;
       }
-
-      img {
-        // @media #{$xs} {
-        //   width: 100%;
-        // }
-      }
     }
 
     .col:first-child {
@@ -30,12 +24,6 @@
       }
     }
 
-    // .col:last-child {
-    //   @media #{$xs} {
-    //     width: 80%;
-    //   }
-    // }
-
     .left {
       .top {
 
@@ -43,6 +31,11 @@
         flex-direction: row;
         justify-content: left;
         align-items: center;
+        @media #{$xxx} {
+          flex-wrap: wrap;
+          text-align: center;
+          justify-content: center;
+        }
 
         .img {
           border-radius: 100%;
@@ -77,13 +70,34 @@
         h3 {
           color: $main2;
           font-size: 31px;
+          @media #{$xxx} {
+            font-size: 21px;
+            text-align: center;
+          }
         }
       }
+    }
+
+    #content {
+      padding-top: 25px;
+      margin-top: 25px;
+      border-top: 1px solid rgba($main, .3);
+      border-bottom: 1px solid rgba($main, .3);
+
+      p {
+        @media #{$xxx} {
+          text-align: justify!important;
+        }
+      }
+
     }
   }
 
   .buttons {
     text-align: center;
+    @media #{$xs} {
+      text-align: center;
+    }
 
     .btn {
       font-size: 31px;
@@ -91,19 +105,55 @@
         font-size: 21px;
         display: block;
       }
-        span {
-          width: 50px!important;
-          height: 50px!important;
-          font-size: 26px;
+      @media #{$xxx} {
+        font-size: 16px!important;
+        display: block;
+        white-space: inherit;
+      }
+
+      span {
+        width: 50px!important;
+        height: 50px!important;
+        font-size: 26px;
+        @media #{$xxx} {
+          width: 30px!important;
+          height: 30px!important;
+          font-size: 16px!important;
         }
       }
     }
   }
 
-  #content {
-    padding-top: 25px;
-    margin-top: 25px;
-    border-top: 1px solid rgba($main, .3);
-    border-bottom: 1px solid rgba($main, .3);
+}
 
-  }
+// .buttons {
+//   text-align: center;
+//   @media #{$xs} {
+//     text-align: center;
+//   }
+
+//   .btn {
+//     font-size: 31px;
+//     @media #{$xs} {
+//       font-size: 21px;
+//       display: block;
+//       width: 100%;
+//     }
+//     @media #{$xxx} {
+//       font-size: 16px!important;
+//       display: block;
+//       width: 100%;
+//     }
+
+//     span {
+//       width: 50px!important;
+//       height: 50px!important;
+//       font-size: 26px;
+//       @media #{$xxx} {
+//         width: 30px!important;
+//         height: 30px!important;
+//         font-size: 16px!important;
+//       }
+//     }
+//   }
+// }
