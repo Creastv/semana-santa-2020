@@ -75,7 +75,8 @@ var wraperForm = document.getElementById('wrapSearch');
 var bgSearch = document.getElementById('bgSearch');
 var closeSearch = document.getElementById('close-search');
 var element = document.querySelector('form');
-var url = window.location.origin + '/ssbarea/';
+var url = window.location.origin;
+// var url = window.location.origin + '/ssbarea/';
 
 element.addEventListener('submit', event => {
     event.preventDefault();
